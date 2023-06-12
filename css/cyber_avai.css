@@ -1,0 +1,31 @@
+.cyber_avai  {
+    height: 75vh;
+    background-image: url(./../img/3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.cyber_avai .overlay {
+    background: rgba(7,10,12,.72);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.cyber_avai .avai_item {
+    background: rgba(255,255,255,.1);
+    border-radius: 10px;
+    padding: 40px;
+    backdrop-filter: blur(3px);
+    transition: all 0.5s;
+
+}
+
+.cyber_avai .avai_item:hover {
+    border-color: white;
+    background-color: black;
+}

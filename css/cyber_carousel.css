@@ -1,0 +1,43 @@
+.cyber_carousel .carousel-inner {
+    height: 100vh;
+}
+
+.cyber_carousel .carousel-inner img {
+    object-fit: cover;
+}
+
+/* canh giữ khi cần tạo overlay */
+.cyber_carousel .carousel-inner .carousel-item .carousel_content {
+    position: absolute;
+    text-align: center;
+    color: white;
+    /* kĩ thuật canh giữa */
+    /* cách 1 */
+    /* 
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); 
+    */
+    /* cách 2: vừa canh giữa vừa tạo đc được 1 div to bằng div cha */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(39,43,54,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.cyber_carousel .carousel-indicators button {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.cyber_carousel .carousel-indicators .active {
+    background-color: green;
+}
+

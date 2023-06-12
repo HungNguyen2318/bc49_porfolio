@@ -1,0 +1,36 @@
+@import url(./header.css);
+@import url(./cyber_carousel.css);
+@import url(./cyber_project.css);
+@import url(./cyber_avai.css);
+
+/* sau này khi đi làm các @media @keyframe luôn luôn để cuối cùng */
+/* max-width : lấy từ 0 => 992px */
+/* lưu ý khi sử dụng @media, khi viết những breakpoint nhỏ hơn nằm dưới và lớn hơn nằm trên */
+@media screen and (max-width:992px){
+    .cyber_carousel .carousel_content h2 {
+        color: red;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .cyber_carousel .carousel_content h2 {
+        color: green;
+    }
+    
+}
+
+
+/* Thứ tự đặt breakpoint với min-width nhỏ đặt trên cùng và lớn ở dưới */
+@media  screen and (min-width : 576px) {
+    .cyber_carousel .carousel_content h2 {
+        color: yellow;
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .cyber_project .nav-pills .nav-link.active {
+        background-color: red;
+    }
+    
+}
